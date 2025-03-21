@@ -5,8 +5,8 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='voicebot',
-            executable='writer',
-            name='writer_turtle',
+            executable='speaker',
+            name='speaker_turtle',
             output='screen',
         ),
         Node(
