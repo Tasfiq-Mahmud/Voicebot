@@ -12,6 +12,7 @@ class controlTurtle(Node):
         self.sub=self.create_subscription(String,'voice_command', self.controlclbk,10)
         self.pub=self.create_publisher(Twist,'cmd_vel',10)
         self.energy=10
+        self.get_logger().info(f'Remaining Energy: 10.0')
     
     def create(self,msg):
         vel=Twist()
